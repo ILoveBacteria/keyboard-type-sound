@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pynput = "*"
+playsound = "==1.2.2"
 
 [dev-packages]
 
