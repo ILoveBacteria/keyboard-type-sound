@@ -16,11 +16,11 @@ def beep(key):
             playsound('sounds/keyboard.wav')
 
 
-def on_release(key):
+def on_press(key):
     Thread(target=beep, args=(key,)).start()
 
 
-listener = keyboard.Listener(on_release=on_release)
+listener = keyboard.Listener(on_press=on_press)
 listener.start()
 sound_mode = 0
 while (True):
